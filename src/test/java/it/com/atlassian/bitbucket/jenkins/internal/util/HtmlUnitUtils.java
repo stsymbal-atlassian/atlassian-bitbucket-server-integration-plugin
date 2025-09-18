@@ -3,7 +3,7 @@ package it.com.atlassian.bitbucket.jenkins.internal.util;
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import com.gargoylesoftware.htmlunit.html.*;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.List;
 import java.util.function.Supplier;
 

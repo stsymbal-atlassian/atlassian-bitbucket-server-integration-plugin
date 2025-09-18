@@ -25,7 +25,7 @@ import org.kohsuke.stapler.DataBoundSetter;
 import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.verb.POST;
 
-import javax.annotation.CheckForNull;
+import edu.umd.cs.findbugs.annotations.CheckForNull;
 import javax.inject.Inject;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -172,25 +172,25 @@ public class DeploymentNotifier extends Notifier implements SimpleBuildStep, Dep
         }
 
         @POST
-        public FormValidation doCheckEnvironmentName(@AncestorInPath Item context,
-                                                     @QueryParameter String environmentName) {
+        public FormValidation doCheckEnvironmentName(@AncestorInPath @CheckForNull Item context,
+                                                     @QueryParameter @CheckForNull String environmentName) {
             return descriptorHelper.doCheckEnvironmentName(context, environmentName);
         }
 
         @POST
-        public FormValidation doCheckEnvironmentType(@AncestorInPath Item context,
-                                                     @QueryParameter String environmentType) {
+        public FormValidation doCheckEnvironmentType(@AncestorInPath @CheckForNull Item context,
+                                                     @QueryParameter @CheckForNull String environmentType) {
             return descriptorHelper.doCheckEnvironmentType(context, environmentType);
         }
 
         @POST
-        public FormValidation doCheckEnvironmentUrl(@AncestorInPath Item context,
-                                                    @QueryParameter String environmentUrl) {
+        public FormValidation doCheckEnvironmentUrl(@AncestorInPath @CheckForNull Item context,
+                                                    @QueryParameter @CheckForNull String environmentUrl) {
             return descriptorHelper.doCheckEnvironmentUrl(context, environmentUrl);
         }
 
         @POST
-        public ListBoxModel doFillEnvironmentTypeItems(@AncestorInPath Item context) {
+        public ListBoxModel doFillEnvironmentTypeItems(@AncestorInPath @CheckForNull Item context) {
             return descriptorHelper.doFillEnvironmentTypeItems(context);
         }
 

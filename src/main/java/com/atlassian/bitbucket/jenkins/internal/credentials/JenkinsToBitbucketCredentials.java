@@ -4,7 +4,7 @@ import com.cloudbees.plugins.credentials.Credentials;
 import com.google.inject.ImplementedBy;
 import hudson.model.Item;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 /**
  * Converts Jenkins credentials to Bitbucket Credentials.

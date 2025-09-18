@@ -20,7 +20,7 @@
         <hamcrest.version>2.2</hamcrest.version>
         <jackson.version>2.17.2</jackson.version>
         <!-- When updating the Jenkins version, also update io.jenkins.tools.bom dependency management and the README -->
-        <jenkins.version>2.426.3</jenkins.version>
+        <jenkins.version>2.492.3</jenkins.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <net.oauth.version>20100527</net.oauth.version>
         <!-- exclude the upgrade tests by default, as they interact with external resources and should not be run frequently -->
@@ -43,8 +43,8 @@
         <dependencies>
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
-                <artifactId>bom-2.426.x</artifactId>
-                <version>2661.vb_b_60650f6d97</version>
+                <artifactId>bom-2.492.x</artifactId>
+                <version>4023.va_eeb_b_4e45f07</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -363,6 +363,24 @@
             <artifactId>asm-commons</artifactId>
             <scope>test</scope>
             <version>${asm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>3.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.inject</groupId>
+            <artifactId>jakarta.inject-api</artifactId>
+            <version>2.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

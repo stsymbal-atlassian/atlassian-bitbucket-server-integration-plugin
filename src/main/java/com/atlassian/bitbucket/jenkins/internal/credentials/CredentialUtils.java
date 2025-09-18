@@ -7,7 +7,7 @@ import hudson.model.Item;
 import hudson.security.ACL;
 import org.jenkinsci.plugins.plaincredentials.StringCredentials;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.*;
 
 import static com.cloudbees.plugins.credentials.CredentialsMatchers.firstOrNull;

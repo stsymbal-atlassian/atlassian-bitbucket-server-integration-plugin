@@ -5,6 +5,7 @@ import com.atlassian.bitbucket.jenkins.internal.model.BuildState;
 import com.atlassian.bitbucket.jenkins.internal.model.TestResults;
 import com.atlassian.bitbucket.jenkins.internal.provider.InstanceKeyPairProvider;
 import com.atlassian.bitbucket.jenkins.internal.util.TestUtils;
+import jakarta.annotation.Nullable;
 import okhttp3.Headers;
 import okhttp3.HttpUrl;
 import okhttp3.Request;
@@ -19,7 +20,6 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import javax.annotation.Nullable;
 import java.security.KeyPair;
 import java.security.Signature;
 import java.security.interfaces.RSAPrivateKey;

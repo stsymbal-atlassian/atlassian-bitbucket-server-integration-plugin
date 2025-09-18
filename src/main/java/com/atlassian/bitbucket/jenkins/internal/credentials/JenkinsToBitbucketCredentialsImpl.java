@@ -7,8 +7,8 @@ import hudson.model.Item;
 import org.apache.commons.codec.Charsets;
 import org.jenkinsci.plugins.plaincredentials.StringCredentials;
 
-import javax.annotation.Nullable;
-import javax.inject.Singleton;
+import jakarta.annotation.Nullable;
+import jakarta.inject.Singleton;
 import java.util.Base64;
 
 import static com.atlassian.bitbucket.jenkins.internal.credentials.BitbucketCredentials.ANONYMOUS_CREDENTIALS;
